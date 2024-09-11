@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz de Jogos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pergunta 1 -->
+        <TextView
+            android:id="@+id/textViewPergunta1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Qual é vilao do super mario bros?"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPergunta1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luigi" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bowser" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peach" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toad" />
+
+            <RadioButton
+                android:id="@+id/radioButton1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wario" />
+        </RadioGroup>
+
+        <!-- Pergunta 2 -->
+        <TextView
+            android:id="@+id/textViewPergunta2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Qual jogo é conhecido por sua construção de mundos em blocos?"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPergunta2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fortnite" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Minecraft" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Sims" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overwatch" />
+
+            <RadioButton
+                android:id="@+id/radioButton2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="League of Legends" />
+        </RadioGroup>
+
+        <!-- Pergunta 3 -->
+        <TextView
+            android:id="@+id/textViewPergunta3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Qual é o nome do jogo que popularizou a expressão 'Battle Royale'?"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/textViewPergunta3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton3_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PUBG" />
+
+            <RadioButton
+                android:id="@+id/radioButton3_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call of Duty" />
+
+            <RadioButton
+                android:id="@+id/radioButton3_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apex Legends" />
+
+            <RadioButton
+                android:id="@+id/radioButton3_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fortnite" />
+
+            <RadioButton
+                android:id="@+id/radioButton3_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H1Z1" />
+        </RadioGroup>
+
+        <!-- Feedback -->
+        <TextView
+            android:id="@+id/textViewFeedback1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewFeedback2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFeedback1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewFeedback3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FF0000"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFeedback2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+
+        <!-- Botões -->
+        <Button
+            android:id="@+id/buttonVerificar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verificar"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFeedback3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/buttonLimpar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar"
+            app:layout_constraintTop_toBottomOf="@+id/buttonVerificar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
